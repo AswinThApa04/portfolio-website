@@ -6,14 +6,14 @@ const Projects = () => {
     {
       title: 'Spotify Clone',
       description: 'A frontend clone of Spotify using React, Tailwind CSS, and Vite.',
-      image: '/images/spotify-clone.png',
+      image: '/spotify-clone.png',
       githubLink: 'https://github.com/AswinThApa04/spotify',
       demoLink: '',
     },
     {
       title: 'Weather App',
       description: 'Check current weather in any city using OpenWeatherMap API.',
-      image: '/images/weather-app.png',
+      image: '/weather-app.png',
       githubLink: 'https://github.com/AswinThApa04/weather-app',
       demoLink: '',
     },

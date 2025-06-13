@@ -1,42 +1,39 @@
-import React from 'react';
+import { Github, Linkedin } from "lucide-react";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-6 mt-10">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        {/* Left: Name or Logo */}
-        <div className="text-lg font-semibold mb-4 md:mb-0">
-          © {new Date().getFullYear()} Aswin. All rights reserved.
-        </div>
+    <footer className="bg-gray-100 dark:bg-gray-900 border-t dark:border-gray-700 py-6 mt-16">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        
+        
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          © {new Date().getFullYear()} Aswin Thapa. All rights reserved.
+        </p>
 
-        {/* Right: Links */}
-        <div className="flex space-x-4">
+        
+        <div className="flex space-x-4 mt-4 md:mt-0">
           <a
             href="https://github.com/AswinThApa04"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition"
           >
-            GitHub
+            <Github size={30} />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/aswin-thapa"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition"
           >
-            LinkedIn
+            <Linkedin size={30} />
           </a>
-          <a
-            href="mailto:your-email@example.com"
-            className="hover:text-white transition-colors"
-          >
-            Email
-          </a>
+          <span className="text-sm text-gray-700 dark:text-gray-300">
+            Connect with me at: <a href="mailto:aswinthapa16@gmail.com" className="underline hover:text-indigo-500">aswinthapa16@gmail.com</a>
+          </span>
+
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
