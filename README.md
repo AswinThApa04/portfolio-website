@@ -1,6 +1,6 @@
-# 🧑‍💻 Aswin Thapa — Developer Portfolio v2
+# 🧑‍💻 Aswin Thapa — Developer Portfolio 
 
-Welcome to the second version of my **personal developer portfolio**, built to showcase my skills, projects, and resume as a frontend developer. This version is a polished, responsive, and interactive single-page site made using **React + Tailwind CSS**, with animations and modern UI enhancements.
+Welcome to my **personal developer portfolio**, built to showcase my skills, projects, and resume as a frontend developer. This version is a polished, responsive, and interactive single-page site made using **React + Tailwind CSS**, with animations and modern UI enhancements.
 
 ![Screenshot](./public/screenshots/hero-section.png) <!-- Add a real screenshot if possible -->
 
