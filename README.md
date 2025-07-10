@@ -31,7 +31,7 @@ This site is built using **React + Tailwind CSS** and is designed to be simple, 
 
 ## 📸 A Quick Look
 
-> ![Hero Section](./screenshots/hero-section.png)
+> ![Hero Section](public/screenshots/hero-section.png)
 
 ---
 
