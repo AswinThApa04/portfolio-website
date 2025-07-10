@@ -1,12 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 flex items-center justify-center px-4 py-16">
-      <div className="bg-white shadow-2xl rounded-3xl p-10 max-w-3xl text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-purple-600">About Me</h1>
+    <motion.section
+      id="about"
+      className="relative font-sans min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-r from-indigo-200 via-purple-100 to-pink-200 overflow-hidden"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      {/* Decorative Background Blobs */}
+      <div className="absolute w-80 h-80 bg-purple-300 opacity-20 rounded-full top-[-60px] left-[-60px] blur-3xl z-0"></div>
+      <div className="absolute w-64 h-64 bg-pink-300 opacity-20 rounded-full bottom-[-80px] right-[-80px] blur-2xl z-0"></div>
 
-        <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-8">
+      {/* Main Content */}
+      <div className="relative bg-white shadow-2xl rounded-3xl p-10 max-w-3xl text-center space-y-6 z-10">
+        <h1 className="text-4xl sm:text-5xl font-bold text-purple-600">About Me</h1>
+
+        <p className="text-lg sm:text-xl text-gray-700 leading-8">
           I’m <span className="font-bold text-indigo-600">Aswin</span>, a passionate{" "}
           <span className="font-semibold text-purple-500">front-end developer</span> with a focus on
           building sleek, responsive, and intuitive user interfaces using{" "}
@@ -14,17 +27,26 @@ const About = () => {
           <span className="font-medium text-indigo-500">Tailwind CSS</span>.
         </p>
 
-        <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-8">
+        <p className="text-lg sm:text-xl text-gray-700 leading-8">
           My journey started with a love for design and evolved into crafting modern web experiences
           that are both functional and beautiful.
         </p>
 
         <p className="text-lg sm:text-xl text-gray-700 leading-8">
-          Outside of coding, I enjoy 🎵 music, keeping up with 👨‍💻 tech trends, and tackling
-          🧠 LeetCode challenges to keep sharpening my problem-solving skills.
+          Outside of coding, I enjoy music, keeping up with tech trends, and tackling {" "}
+          <span className="text-pink-500 font-medium">LeetCode</span> challenges to keep sharpening my
+          problem-solving skills.
         </p>
+
+        {/* Tech Icons Row */}
+        <div className="flex justify-center gap-5 pt-4">
+          <img src="/icons/react.svg" className="w-8" title="React" />
+          <img src="/icons/tailwind.svg" className="w-8" title="Tailwind CSS" />
+          <img src="/icons/js.svg" className="w-8" title="JavaScript" />
+          <img src="/icons/github.svg" className="w-8" title="GitHub" />
+        </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
