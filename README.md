@@ -1,52 +1,43 @@
-# 👋 Hey, I'm Aswin Thapa
+# 🧑‍💻 Aswin Thapa — Developer Portfolio v2
 
-Welcome to my personal portfolio — a place where I showcase what I do, what I love, and the projects I'm building as I learn and grow in tech.
+Welcome to the second version of my **personal developer portfolio**, built to showcase my skills, projects, and resume as a frontend developer. This version is a polished, responsive, and interactive single-page site made using **React + Tailwind CSS**, with animations and modern UI enhancements.
 
-This site is built using **React + Tailwind CSS** and is designed to be simple, clean, and responsive. I’ve added some nice touches like typewriter animations, smooth scrolling, and a dark mode toggle just to make it more “me”.
-
----
-
-## 🌟 What You’ll Find
-
-- **Hero Section** with a typewriter intro and a Lottie animation
-- **Dark Mode** toggle for better viewing (and vibes)
-- **Smooth Scroll Navigation** — scroll or click to move between sections
-- **Project Cards** with GitHub links
-- **About Me** section that tells you a bit about my journey
-- **Contact Section** to reach out or just say hi!
-- **Resume Download** button
+![Screenshot](./public/screenshots/hero-section.png) <!-- Add a real screenshot if possible -->
 
 ---
 
-## 🛠️ Tech I Used
+## 🚀 Features
 
-- **React** — for all the components and routing
-- **Tailwind CSS** — for fast and responsive UI
-- **Framer Motion** — for some subtle animations
-- **Lucide Icons** — clean and minimal icons
-- **Lottie** — for the dev animation
-- **Typewriter effect** — because it looks cool 😎
-
----
-
-## 📸 A Quick Look
-
-> ![Hero Section](public/screenshots/hero-section.png)
+- 🧠 **Typewriter Hero Section** — Catchy introduction with dynamic typing animation.
+- 🌗 **Dark Mode Toggle** — Seamless light/dark theme with persistent toggle.
+- 📌 **ScrollSpy Navigation** — Smooth scroll + active section highlighting.
+- 📂 **Projects Showcase** — Responsive project cards with GitHub/live demo links.
+- 🧾 **Resume Download** — One-click PDF resume download button.
+- 💬 **Contact Form** — Reach out easily via a clean form or email link.
+- 🖼️ **Lottie Animation** — Clean dev-themed animation in hero section.
+- 🎨 **Tech Icons** — Stack logos displayed elegantly in Home/About.
 
 ---
 
-## 🙋‍♂️ Why I Made This
+## 🛠️ Tech Stack
 
-I come from an **ECE background**, but I've always loved building things on the web. This portfolio is just one step in my learning journey as I try to get into the software industry. Every section you see here was built from scratch with a lot of trial, error, and caffeine ☕.
+| Layer       | Technologies                             |
+|------------|------------------------------------------|
+| Frontend    | React, Tailwind CSS, React Router (initial), Framer Motion |
+| Animations  | Lottie (JSON-based), Typewriter          |
+| Icons       | Lucide React Icons                       |
+| Hosting     | GitHub Pages / Vercel (optional)         |
 
 ---
 
-## 📬 Want to Connect?
+## 🧩 Future Improvements
 
-- **GitHub**: [@AswinThApa04](https://github.com/AswinThApa04)
-- **LinkedIn**: [linkedin.com/in/aswin-thapa](https://linkedin.com/in/aswin-thapa)
-- **Mail me**: aswinthapa16@gmail.com
+- 🌐 Convert to full SPA using ScrollSpy and anchor linking
+- 🪄 Add testimonials or a blog section
+- 🧠 Deploy and track via Analytics
+- 🪪 Integrate email service or Formspree
 
 ---
 
 Thanks for stopping by!
+
