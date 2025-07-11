@@ -8,14 +8,24 @@ const Projects = () => {
       description: "A frontend clone of Spotify using React, Tailwind CSS, and Vite.",
       image: "/spotify-clone.png",
       githubLink: "https://github.com/AswinThApa04/spotify",
-      demoLink: "",
     },
     {
       title: "Weather App",
       description: "Check current weather in any city using OpenWeatherMap API.",
       image: "/weather-app.png",
       githubLink: "https://github.com/AswinThApa04/weather-app",
-      demoLink: "",
+    },
+    {
+      title: 'Bank Account System',
+      description: 'C++ OOP-based mini project simulating a banking system with account features.',
+      image: '/c_bank.png',
+      githubLink: 'https://github.com/AswinThApa04/Bank-Account-System',
+    },
+    {
+      title: 'IPL 2022 Data Visualizer',
+      description: 'Python project that visualizes IPL 2022 data using pandas and matplotlib.',
+      image: '/match_winner.png',
+      githubLink: 'https://github.com/AswinThApa04/IPL-2022-Data-Visualizer',
     },
   ];
 
