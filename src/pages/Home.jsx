@@ -65,13 +65,13 @@ const Home = () => {
 
         {/* Tech Icons */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
-          <img src="/icons/react.svg" alt="React" className="w-8 h-8" title="React" />
-          <img src="/icons/tailwind.svg" alt="Tailwind" className="w-8 h-8" title="Tailwind CSS" />
-          <img src="/icons/js.svg" alt="JavaScript" className="w-8 h-8" title="JavaScript" />
-          <img src="/icons/github.svg" alt="GitHub" className="w-8 h-8" title="GitHub" />
-          <img src="/icons/c.svg" alt="GitHub" className="w-8 h-8" title="C++" />
+          <img src={`${import.meta.env.BASE_URL}icons/react.svg`} alt="React" className="w-8 h-8" title="React" />
+          <img src={`${import.meta.env.BASE_URL}icons/tailwind.svg`} alt="Tailwind" className="w-8 h-8" title="Tailwind CSS" />
+          <img src={`${import.meta.env.BASE_URL}icons/js.svg`} alt="JavaScript" className="w-8 h-8" title="JavaScript" />
+          <img src={`${import.meta.env.BASE_URL}icons/github.svg`} alt="GitHub" className="w-8 h-8" title="GitHub" />
+          <img src={`${import.meta.env.BASE_URL}icons/c.svg`} alt="C++" className="w-8 h-8" title="C++" />
         </div>
-
+        
         {/* Current Focus Badge */}
         <span className="inline-block bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-semibold mt-4 shadow-md">
           🔥 Currently working on: Personal Finance Dashboard

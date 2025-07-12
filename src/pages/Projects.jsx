@@ -2,29 +2,31 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+  const base = import.meta.env.BASE_URL; // ✅ Use this for relative paths
+
   const projects = [
     {
       title: "Spotify Clone",
       description: "A frontend clone of Spotify using React, Tailwind CSS, and Vite.",
-      image: "/spotify-clone.png",
+      image: `${base}spotify-clone.png`, // ✅ updated
       githubLink: "https://github.com/AswinThApa04/spotify",
     },
     {
       title: "Weather App",
       description: "Check current weather in any city using OpenWeatherMap API.",
-      image: "/weather-app.png",
+      image: `${base}weather-app.png`,
       githubLink: "https://github.com/AswinThApa04/weather-app",
     },
     {
       title: 'Bank Account System',
       description: 'C++ OOP-based mini project simulating a banking system with account features.',
-      image: '/c_bank.png',
+      image: `${base}c_bank.png`,
       githubLink: 'https://github.com/AswinThApa04/Bank-Account-System',
     },
     {
       title: 'IPL 2022 Data Visualizer',
       description: 'Python project that visualizes IPL 2022 data using pandas and matplotlib.',
-      image: '/match_winner.png',
+      image: `${base}match_winner.png`,
       githubLink: 'https://github.com/AswinThApa04/IPL-2022-Data-Visualizer',
     },
   ];

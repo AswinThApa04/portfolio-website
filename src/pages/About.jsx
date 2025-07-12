@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const base = import.meta.env.BASE_URL; // Add this line
+
   return (
     <motion.section
       id="about"
@@ -33,17 +35,17 @@ const About = () => {
         </p>
 
         <p className="text-lg sm:text-xl text-gray-700 leading-8">
-          Outside of coding, I enjoy music, keeping up with tech trends, and tackling {" "}
+          Outside of coding, I enjoy music, keeping up with tech trends, and tackling{" "}
           <span className="text-pink-500 font-medium">LeetCode</span> challenges to keep sharpening my
           problem-solving skills.
         </p>
 
         {/* Tech Icons Row */}
         <div className="flex justify-center gap-5 pt-4">
-          <img src="/icons/react.svg" className="w-8" title="React" />
-          <img src="/icons/tailwind.svg" className="w-8" title="Tailwind CSS" />
-          <img src="/icons/js.svg" className="w-8" title="JavaScript" />
-          <img src="/icons/github.svg" className="w-8" title="GitHub" />
+          <img src={`${base}icons/react.svg`} className="w-8" title="React" />
+          <img src={`${base}icons/tailwind.svg`} className="w-8" title="Tailwind CSS" />
+          <img src={`${base}icons/js.svg`} className="w-8" title="JavaScript" />
+          <img src={`${base}icons/github.svg`} className="w-8" title="GitHub" />
         </div>
       </div>
     </motion.section>
