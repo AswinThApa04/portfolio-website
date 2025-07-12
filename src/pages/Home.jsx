@@ -63,7 +63,7 @@ const Home = () => {
 
         </div>
 
-        {/* Tech Icons */}
+        
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
           <img src={`${import.meta.env.BASE_URL}icons/react.svg`} alt="React" className="w-8 h-8" title="React" />
           <img src={`${import.meta.env.BASE_URL}icons/tailwind.svg`} alt="Tailwind" className="w-8 h-8" title="Tailwind CSS" />
@@ -72,18 +72,18 @@ const Home = () => {
           <img src={`${import.meta.env.BASE_URL}icons/c.svg`} alt="C++" className="w-8 h-8" title="C++" />
         </div>
 
-        {/* Current Focus Badge */}
+        
         <span className="inline-block bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-semibold mt-4 shadow-md">
           🔥 Currently working on: Personal Finance Dashboard
         </span>
       </div>
 
-      {/* Right Content - Lottie */}
+      
       <div className="md:w-1/2 mb-10 md:mb-0 z-10">
         <Lottie animationData={devAnimation} loop={true} className="w-full max-w-sm md:max-w-md" />
       </div>
 
-      {/* Background Blobs */}
+      
       <div className="absolute w-96 h-96 bg-purple-300 opacity-20 rounded-full top-[-100px] left-[-100px] blur-3xl z-0"></div>
       <div className="absolute w-64 h-64 bg-blue-300 opacity-10 rounded-full bottom-[-80px] right-[-80px] blur-2xl z-0"></div>
     </section>

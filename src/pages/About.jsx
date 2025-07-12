@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const base = import.meta.env.BASE_URL; // Add this line
+  const base = import.meta.env.BASE_URL;
 
   return (
     <motion.section
@@ -13,7 +13,7 @@ const About = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      {/* Decorative Background Blobs */}
+      
       <div className="absolute w-80 h-80 bg-purple-300 opacity-20 rounded-full top-[-60px] left-[-60px] blur-3xl z-0"></div>
       <div className="absolute w-64 h-64 bg-pink-300 opacity-20 rounded-full bottom-[-80px] right-[-80px] blur-2xl z-0"></div>
 
@@ -40,7 +40,6 @@ const About = () => {
           problem-solving skills.
         </p>
 
-        {/* Tech Icons Row */}
         <div className="flex justify-center gap-5 pt-4">
           <img src={`${base}icons/react.svg`} className="w-8" title="React" />
           <img src={`${base}icons/tailwind.svg`} className="w-8" title="Tailwind CSS" />

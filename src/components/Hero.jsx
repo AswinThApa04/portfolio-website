@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 

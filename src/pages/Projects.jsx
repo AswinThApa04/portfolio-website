@@ -2,13 +2,13 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
-  const base = import.meta.env.BASE_URL; // ✅ Use this for relative paths
+  const base = import.meta.env.BASE_URL; 
 
   const projects = [
     {
       title: "Spotify Clone",
       description: "A frontend clone of Spotify using React, Tailwind CSS, and Vite.",
-      image: `${base}spotify-clone.png`, // ✅ updated
+      image: `${base}spotify-clone.png`, 
       githubLink: "https://github.com/AswinThApa04/spotify",
     },
     {
