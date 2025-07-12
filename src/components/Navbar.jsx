@@ -46,9 +46,7 @@ export default function Navbar() {
           </ul>
 
           {/* Resume Button */}
-          <a
-            href="/aswinthapa_resume.pdf"
-            download
+          <a href={`${import.meta.env.BASE_URL}aswinthapa_resume.pdf`} download
             className="flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium bg-indigo-500 text-white hover:bg-indigo-600 transition-all shadow-md"
           >
             <FileText size={16} /> Resume

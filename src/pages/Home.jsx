@@ -54,13 +54,13 @@ const Home = () => {
             View My Work
           </Link>
 
-          <a
-            href="/aswinthapa_resume.pdf"
-            download
-            className="border border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-purple-600 transition duration-300"
-          >
+          <a href={`${import.meta.env.BASE_URL}aswinthapa_resume.pdf`} 
+            download 
+            className="border border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-purple-600 transition duration-300">
             Resume
           </a>
+
+
         </div>
 
         {/* Tech Icons */}
@@ -71,7 +71,7 @@ const Home = () => {
           <img src={`${import.meta.env.BASE_URL}icons/github.svg`} alt="GitHub" className="w-8 h-8" title="GitHub" />
           <img src={`${import.meta.env.BASE_URL}icons/c.svg`} alt="C++" className="w-8 h-8" title="C++" />
         </div>
-        
+
         {/* Current Focus Badge */}
         <span className="inline-block bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-semibold mt-4 shadow-md">
           🔥 Currently working on: Personal Finance Dashboard
