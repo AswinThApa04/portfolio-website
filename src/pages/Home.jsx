@@ -6,16 +6,16 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="relative min-h-[100vh] pb-20 flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 bg-gradient-to-b from-blue-500 via-purple-600 to-gray-900 text-white overflow-hidden">
-
-      <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
+    <section className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-20 bg-gradient-to-b from-blue-500 via-purple-600 to-gray-900 text-white overflow-hidden">
+      
+      <div className="flex-1 text-center md:text-left space-y-6 z-10">
         <motion.h1
           className="text-4xl sm:text-5xl font-bold"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hi, I'm <span className="text-yellow-300">Aswin </span>
+          Hi, I'm <span className="text-yellow-300">Aswin</span>
         </motion.h1>
 
         <motion.p
@@ -39,11 +39,11 @@ const Home = () => {
           />
         </motion.p>
 
-        <p className="text-sm sm:text-base text-white/80 max-w-md mx-auto md:mx-0">
+        <p className="text-sm sm:text-base text-white/80 max-w-md mx-auto md:mx-0 leading-relaxed">
           I love crafting fast and modern web interfaces. Currently looking for front-end roles where I can contribute and grow.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start mt-4">
+        <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start justify-center md:justify-start mt-4">
           <Link
             to="/projects"
             className="bg-white text-purple-600 px-6 py-2 rounded-full font-medium shadow-md hover:bg-purple-100 transition duration-300"
@@ -51,16 +51,15 @@ const Home = () => {
             View My Work
           </Link>
 
-          <a href={`${import.meta.env.BASE_URL}aswinthapa_resume.pdf`} 
-            download 
-            className="border border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-purple-600 transition duration-300">
+          <a
+            href={`${import.meta.env.BASE_URL}aswinthapa_resume.pdf`}
+            download
+            className="border border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-purple-600 transition duration-300"
+          >
             Resume
           </a>
-
-
         </div>
 
-        
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
           <img src={`${import.meta.env.BASE_URL}icons/react.svg`} alt="React" className="w-8 h-8" title="React" />
           <img src={`${import.meta.env.BASE_URL}icons/tailwind.svg`} alt="Tailwind" className="w-8 h-8" title="Tailwind CSS" />
@@ -68,19 +67,15 @@ const Home = () => {
           <img src={`${import.meta.env.BASE_URL}icons/github.svg`} alt="GitHub" className="w-8 h-8" title="GitHub" />
           <img src={`${import.meta.env.BASE_URL}icons/c.svg`} alt="C++" className="w-8 h-8" title="C++" />
         </div>
-
-        
         <span className="inline-block bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-semibold mt-4 shadow-md">
-         Currently working on:Himalayan_Trails - A lead generating travel website
+          Currently working on: Himalayan_Trails - A lead generating travel website
         </span>
       </div>
 
-      
-      <div className="md:w-1/2 mb-10 md:mb-0 z-10">
-        <Lottie animationData={devAnimation} loop={true} className="w-full max-w-sm md:max-w-md" />
+      <div className="flex-1 flex justify-center md:justify-end z-10">
+        <Lottie animationData={devAnimation} loop={true} className="w-[85%] md:w-[90%] max-w-md" />
       </div>
 
-      
       <div className="absolute w-96 h-96 bg-purple-300 opacity-20 rounded-full top-[-100px] left-[-100px] blur-3xl z-0"></div>
       <div className="absolute w-64 h-64 bg-blue-300 opacity-10 rounded-full bottom-[-80px] right-[-80px] blur-2xl z-0"></div>
     </section>

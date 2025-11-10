@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4">
+    <section class="flex flex-col md:flex-row items-center justify-between min-h-screen px-8 md:px-20 bg-gradient-to-b from-blue-500 to-purple-700 text-white">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
         Hi, I'm <span className="text-yellow-400">Aswin</span> 
       </h1>
