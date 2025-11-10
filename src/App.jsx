@@ -11,7 +11,6 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        {/* Route-specific content */}
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

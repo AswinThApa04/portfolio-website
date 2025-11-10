@@ -16,8 +16,6 @@ const About = () => {
       
       <div className="absolute w-80 h-80 bg-purple-300 opacity-20 rounded-full top-[-60px] left-[-60px] blur-3xl z-0"></div>
       <div className="absolute w-64 h-64 bg-pink-300 opacity-20 rounded-full bottom-[-80px] right-[-80px] blur-2xl z-0"></div>
-
-      {/* Main Content */}
       <div className="relative bg-white shadow-2xl rounded-3xl p-10 max-w-3xl text-center space-y-6 z-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-purple-600">About Me</h1>
 

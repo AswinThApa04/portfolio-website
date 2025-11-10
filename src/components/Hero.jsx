@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-        Hi, I'm <span className="text-yellow-400">Aswin</span> 👋
+        Hi, I'm <span className="text-yellow-400">Aswin</span> 
       </h1>
 
       <TypeAnimation
@@ -14,7 +14,7 @@ export default function Hero() {
           1500,
           "a Full-Stack Learner",
           1500,
-          "always learning 🚀",
+          "always learning ",
           1500,
         ]}
         wrapper="span"

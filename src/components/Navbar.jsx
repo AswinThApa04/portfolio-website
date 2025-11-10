@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FileText, Sun, Moon } from "lucide-react"; // using Lucide icons for consistency
-
+import { FileText, Sun, Moon } from "lucide-react"; 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -19,12 +18,10 @@ export default function Navbar() {
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo / Title */}
         <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-          Aswin <span className="text-indigo-500">Portfolio</span>
+          Aswin's <span className="text-indigo-500">Portfolio</span>
         </h1>
 
-        {/* Navigation */}
         <nav className="flex flex-wrap items-center gap-4">
           <ul className="flex flex-wrap gap-6 items-center">
             {navLinks.map((link) => (
@@ -45,14 +42,12 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Resume Button */}
           <a href={`${import.meta.env.BASE_URL}aswinthapa_resume.pdf`} download
             className="flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium bg-indigo-500 text-white hover:bg-indigo-600 transition-all shadow-md"
           >
             <FileText size={16} /> Resume
           </a>
 
-          {/* Icon-only Theme Toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="ml-2 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-yellow-300 hover:scale-105 transition"

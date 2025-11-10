@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <section className="relative min-h-[100vh] pb-20 flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 bg-gradient-to-b from-blue-500 via-purple-600 to-gray-900 text-white overflow-hidden">
 
-      {/* Left Content */}
       <div className="md:w-1/2 text-center md:text-left space-y-6 z-10">
         <motion.h1
           className="text-4xl sm:text-5xl font-bold"
@@ -16,7 +15,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hi, I'm <span className="text-yellow-300">Aswin 👋</span>
+          Hi, I'm <span className="text-yellow-300">Aswin </span>
         </motion.h1>
 
         <motion.p
@@ -40,12 +39,10 @@ const Home = () => {
           />
         </motion.p>
 
-        {/* Short Intro */}
         <p className="text-sm sm:text-base text-white/80 max-w-md mx-auto md:mx-0">
           I love crafting fast and modern web interfaces. Currently looking for front-end roles where I can contribute and grow.
         </p>
 
-        {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start mt-4">
           <Link
             to="/projects"
@@ -74,7 +71,7 @@ const Home = () => {
 
         
         <span className="inline-block bg-white text-purple-600 px-3 py-1 rounded-full text-xs font-semibold mt-4 shadow-md">
-          🔥 Currently working on: Personal Finance Dashboard
+         Currently working on:Himalayan_Trails - A lead generating travel website
         </span>
       </div>
 
