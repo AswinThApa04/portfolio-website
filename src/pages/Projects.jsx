@@ -6,6 +6,18 @@ const Projects = () => {
 
   const projects = [
     {
+      title:'DevPal',
+      description:'A developer based productivity tracker system',
+      image:`${base}devPal.png`,
+      githubLink:'https://github.com/AswinThApa04/DevPal',
+    },
+    {
+      title:'Himalayan-Trails',
+      description:'A lead generation travel site',
+      image:`${base}himal_trails.png`,
+      githubLink:'https://github.com/AswinThApa04/Himalayan_trails',
+    },
+    {
       title: "Spotify Clone",
       description: "A frontend clone of Spotify using React, Tailwind CSS, and Vite.",
       image: `${base}spotify-clone.png`, 
@@ -29,6 +41,7 @@ const Projects = () => {
       image: `${base}match_winner.png`,
       githubLink: 'https://github.com/AswinThApa04/IPL-2022-Data-Visualizer',
     },
+    
   ];
 
   return (
